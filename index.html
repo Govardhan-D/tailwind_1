@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/output.css">
     <title>NeoITO Funds</title>
 </head>
 
 <body class="">
-    <Header class="flex justify-between px-48 py-9">
-        <img src="assets/logo.svg" />
-        
-        <nav class="flex justify-center items-center gap-6">
+    <Header class="px-5 py-[17px] lg:flex lg:justify-between lg-px-48 lg-py-9">
+        <img src="assets/logo.svg" class="w-[133px] lg:w-[172px]"/>
+        <nav class="sm:hidden lg:flex lg:justify-center lg:items-center lg:gap-6">
             <div class="flex justify-center items-center w-fit rounded-md bg-[#F5F5F5] py-3 px-3 gap-1">
                 <img src="assets/search.svg" />
                 <input type="text" placeholder="Search all mutual funds" class="border-none"/>
@@ -26,20 +25,24 @@
                 <li>
                     <a href="#">Ask the Expert</a>
                 </li>
-                <li>
+                <li class="font-black">
                     <a href="#">Login/Register</a>
                 </li>
             </ul>
 
         </nav>
-    </Header>
-    <Section class="mt-6 flex justify-between items-center px-48 py-9">
-        <div class="max-w-[455px]">
-            <h1 class="text-[40px]">Investing Made Easy For You</h1>
-            <p class="text-[18px] mt-5">India’s fastest growing investment platform with 20 Lac+ users. We use edge-cutting technology to ensure that your personal information is fully encrypted and securely stored.</p>
-            <button class="mt-16 text-[18px] bg-[#00D09C] text-[#FFFFFF] w-52 h-12 rounded-[4px] cursor-pointer">Get Started Now!</button>
+        <div class="lg:hidden flex justify-center items-center w-fit rounded-md bg-[#F5F5F5] py-3 px-3 gap-1 mt-[37px] w-full">
+            <img src="assets/search.svg" />
+            <input type="text" placeholder="Search all mutual funds" class="border-none"/>
         </div>
-        <img src="assets/banner1.jpg" class="max-w-"/>
+    </Header>
+    <Section class="mt-6 flex justify-between items-center  px-5 py-[17px] lg:px-48 lg:py-9">
+        <div class="max-w-[416px]">
+            <h1 class="sm:text-[30px] lg:text-[40px]">Investing Made Easy For You</h1>
+            <p class="text-[17px] mt-5">India’s fastest growing investment platform with 20 Lac+ users. We use edge-cutting technology to ensure that your personal information is fully encrypted and securely stored.</p>
+            <button class="mt-16 text-[18px] bg-[#00D09C] text-[#FFFFFF] w-[205px] h-[48px] mb-20 lg:w-52 lg:h-12 rounded-[4px] cursor-pointer">Get Started Now!</button>
+        </div>
+        <img src="assets/banner1.jpg" class="sm:hidden block"/>
     </Section>
     <section class="mt-12 flex justify-between bg-[#E4FAF4] px-48 py-9">
         <div class="max-w-[504px]">
@@ -62,10 +65,10 @@
         </div>
     </section>
     <section class="flex justify-around items-center h-[791px] px-48 py-9">
-        <img src="assets/Fund.svg" class="w-[602px]"/>
+        <img src="assets/Fund.svg" class="h-[470px]"/>
         <div>
             <p class="text-[17px]">About Mutual Funds</p>
-            <h2 class="text-black text-5xl">Learn With Fund Guru</h2>
+            <h2 class="text-black text-5xl mt-[4px]">Learn With Fund Guru</h2>
             <div class="flex flex-col gap-[15px] mt-5">
                 <div class="flex gap-5">
                     <img src="assets/ok.svg" />
@@ -100,31 +103,47 @@
             </div>
         </div>
     </section>
-    <section class="flex justify-between items-center px-48 py-9">
+    <section class="flex justify-between items-center px-48 py-9 bg-gradient-to-b from-[#E4FAF4] to-[#FFFFFF]">
         <div>
             <h2 class="text-[#222222] text-[40px] font-black">Ask The Expert</h2>
             <p class="mt-5 text-[17px] font-light">You can schedule a meeting with an expense manager</p>
-            <div class="mt-[50px] flex">
-                <div class="flex flex-col w-[260px] justify-between">
+
+
+            <div class="mt-[50px] flex items-start gap-10">
+                <div class="flex flex-col w-[260px] h-full">
                     <div class="p-4 bg-[#E8F9F5] w-fit">
                         <img src="assets/cash.svg" class="w-[25px] h-[25px]" />
                     </div>
-                    <h3 class="text-2xl font-medium mt-[34px]" >Investing Made Easy</h3>
-                    <p class="mt-5 text-[17px] font-light">Three simple options- cautions, balanced, adventurous.Expert will take care of rest!</p>
-                    <Button class="w-40 h-[52px] bg-[#00D09C]">Invest Now!</Button>
+                    <h3 class="text-2xl font-medium mt-[34px]">Investing Made Easy</h3>
+                    <p class="mt-5 text-[17px] font-light flex-1">
+                        Three simple options - cautious, balanced, adventurous. Experts will take care of the rest!
+                    </p>
+                    <Button class="w-40 h-[52px] bg-[#00D09C] mt-16">Invest Now!</Button>
                 </div>
-                <div class="flex flex-col w-[260px] justify-start">
+                <div class="flex flex-col w-[260px] h-full">
                     <div class="p-4 bg-[#E8F9F5] w-fit">
                         <img src="assets/Schedule.svg" class="w-[25px] h-[25px]" />
                     </div>
                     <h3 class="text-2xl font-medium mt-[34px]">Schedule a Meeting</h3>
-                    <p class="mt-5 text-[17px] font-light">Expert will give you the best advice. Schedule a meeting with the expert to know mutual funds better.</p>
-                    <Button class="w-40 h-[52px] bg-[#00D09C]">Schedule Now</Button>
+                    <p class="mt-5 text-[17px] font-light flex-1">
+                        An expert will give you the best advice. Schedule a meeting to learn more about mutual funds.
+                    </p>
+                    <Button class="w-40 h-[52px] bg-[#00D09C] mt-16">Schedule Now</Button>
                 </div>
             </div>
+
+
         </div>
         <img src="assets/Expert.png" class="max-w-[555px]"/>
     </section>
-    
+    <section class="flex justify-center items-center flex-col min-h-[498px]">
+        <h2 class="font-medium text-3xl">Manage your Investment from your hand.</h2>
+        <p class="font-light mt-5 text-[17px]">Now you will be at ease of investing, buying and selling easier with just a click.</p>
+        <p class="mt-[50px] font-medium text-2xl">Download the App now!</p>
+        <div class="flex flex-row gap-[30px] mt-[30px]">
+            <img src="assets/app.svg" class="w-[152px]"/>
+            <img src="assets/app2.svg" class="w-[152px]"/>
+        </div>
+    </section> 
 </body>
 </html>
