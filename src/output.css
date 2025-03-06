@@ -339,6 +339,9 @@
       max-width: 96rem;
     }
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
