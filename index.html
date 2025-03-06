@@ -8,14 +8,14 @@
 </head>
 
 <body class="">
-    <Header class="px-5 py-[17px] lg:flex lg:justify-between lg-px-48 lg-py-9">
+    <Header class="flex justify-between px-5 py-5 lg:px-48 lg:py-9">
         <img src="assets/logo.svg" class="w-[133px] lg:w-[172px]"/>
-        <nav class="sm:hidden lg:flex lg:justify-center lg:items-center lg:gap-6">
-            <div class="flex justify-center items-center w-fit rounded-md bg-[#F5F5F5] py-3 px-3 gap-1">
+        <nav class="flex items-center lg:justify-center lg:items-center lg:gap-6">
+            <div class="hidden lg:flex justify-center items-center w-fit rounded-md bg-[#F5F5F5] py-3 px-3 gap-1">
                 <img src="assets/search.svg" />
                 <input type="text" placeholder="Search all mutual funds" class="border-none"/>
             </div>
-            <ul class="flex justify-center items-center gap-6">
+            <ul class="hidden lg:flex justify-center items-center gap-6">
                 <li>
                     <a href="#">Learn with Fund Guru</a>
                 </li>
@@ -29,27 +29,39 @@
                     <a href="#">Login/Register</a>
                 </li>
             </ul>
+            <div class="flex flex-col gap-[5px] lg:hidden">
+                <div class="w-[30px] h-[3px] bg-[#222222]"></div>
+                <div class="w-[30px] h-[3px] bg-[#222222]"></div>
+                <div class="w-[30px] h-[3px] bg-[#222222]"></div>
+
+            </div>
 
         </nav>
-        <div class="lg:hidden flex justify-center items-center w-fit rounded-md bg-[#F5F5F5] py-3 px-3 gap-1 mt-[37px] w-full">
+        
+    </Header>
+    <section class="px-5 mt-[37px]">
+        <div class="flex lg:justify-center lg:items-center w-fit rounded-md bg-[#F5F5F5] py-3 px-3 gap-[8px] mt-[37px] w-full lg:hidden">
             <img src="assets/search.svg" />
             <input type="text" placeholder="Search all mutual funds" class="border-none"/>
         </div>
-    </Header>
-    <Section class="mt-6 flex justify-between items-center  px-5 py-[17px] lg:px-48 lg:py-9">
+    </section>
+    <Section class="mt-[50px] flex justify-between items-center px-5 lg:px-48 lg:py-9">
         <div class="max-w-[416px]">
-            <h1 class="sm:text-[30px] lg:text-[40px]">Investing Made Easy For You</h1>
-            <p class="text-[17px] mt-5">India’s fastest growing investment platform with 20 Lac+ users. We use edge-cutting technology to ensure that your personal information is fully encrypted and securely stored.</p>
+            <h1 class="text-[40px]">Investing Made <span class="relative font-bold ">
+                Easy
+                <span class="absolute left-0 bottom-1 w-full h-2 bg-teal-200 -z-10"></span>
+              </span> For You</h1>
+            <p class="text-[17px] font-light mt-5">India’s fastest growing investment platform with 20 Lac+ users. We use edge-cutting technology to ensure that your personal information is fully encrypted and securely stored.</p>
             <button class="mt-16 text-[18px] bg-[#00D09C] text-[#FFFFFF] w-[205px] h-[48px] mb-20 lg:w-52 lg:h-12 rounded-[4px] cursor-pointer">Get Started Now!</button>
         </div>
-        <img src="assets/banner1.jpg" class="sm:hidden block"/>
+        <img src="assets/banner1.jpg" class="hidden lg:block"/>
     </Section>
-    <section class="mt-12 flex justify-between bg-[#E4FAF4] px-48 py-9">
+    <section class="mt-12 flex flex-col lg:flex-row justify-between lg:items-center bg-[#E4FAF4] px-5 py-10 lg:px-48 lg:py-9">
         <div class="max-w-[504px]">
             <h2 class="text-3xl font-black">Trusted By Millions Of People</h2>
             <p class="text-[17px] mt-5">We are registered as a distributor with AMFI, as an investment advisor with SEBI and platform partners with BSE.</p>
         </div>
-        <div class="flex justify-between items-center gap-10">
+        <div class="flex justify-between items-start mt-[50px] lg:mt-0 gap-10 text-[11px]">
             <div class="flex flex-col justify-center items-center gap-3">
                 <img src="assets/Investing1.svg" />
                 <p>ATR-823742</p>
@@ -64,37 +76,37 @@
             </div>
         </div>
     </section>
-    <section class="flex justify-around items-center h-[791px] px-48 py-9">
-        <img src="assets/Fund.svg" class="h-[470px]"/>
+    <section class="flex flex-col lg:flex-row lg:justify-around lg:items-center min-h-[791px] px-5 pt-10 lg:px-48 lg:py-9">
+        <img src="assets/Fund.svg" class="h-[251px] lg:h-[470px]"/>
         <div>
-            <p class="text-[17px]">About Mutual Funds</p>
-            <h2 class="text-black text-5xl mt-[4px]">Learn With Fund Guru</h2>
+            <p class="mt-[30px] font-light text-[17px]">About Mutual Funds</p>
+            <h2 class="text-black text-[30px] lg:text-5xl mt-[4px]">Learn With Fund Guru</h2>
             <div class="flex flex-col gap-[15px] mt-5">
                 <div class="flex gap-5">
-                    <img src="assets/ok.svg" />
+                    <img src="assets/ok.svg" class="w-5"/>
                     <p class="text-[17px]">Mutual Funds – Introduction and Working</p>
                 </div>
                 <div class="flex gap-5">
-                    <img src="assets/ok.svg" />
+                    <img src="assets/ok.svg" class="w-5"/>
                     <p class="text-[17px]">Benefits of Investing in Mutual Funds</p>
                 </div>
                 <div class="flex gap-5">
-                    <img src="assets/ok.svg" />
+                    <img src="assets/ok.svg" class="w-5"/>
                     <p class="text-[17px]">Mutual Funds Schemes and Types</p>
                 </div>
                 <div class="flex gap-5">
-                    <img src="assets/ok.svg" />
+                    <img src="assets/ok.svg" class="w-5"/>
                     <p class="text-[17px]">Ways To Choose Mutual Fund Schemes</p>
                 </div>
                 <div class="flex gap-5">
-                    <img src="assets/ok.svg" />
+                    <img src="assets/ok.svg" class="w-5"/>
                     <p class="text-[17px]">Offer Documents and Statements</p>
                 </div>
                 <div class="flex gap-5">
-                    <img src="assets/ok.svg" />
+                    <img src="assets/ok.svg" class="w-5"/>
                     <p class="text-[17px]">Transactions in Mutual Funds</p>
                 </div>
-                <div class="mt-12 flex gap-5">
+                <div class="mt-[50px] mb-[70px] lg:mt-12 flex justify-between lg:gap-5">
                     <button class="bg-[#00D09C] text-white w-40 h-[52px] rounded-[4px]">Know More</button>
                     <button class="cursor-pointer flex justify-center items-center gap-[10px]">Watch Video <img src="assets/play.svg"></button>
 
@@ -103,13 +115,13 @@
             </div>
         </div>
     </section>
-    <section class="flex justify-between items-center px-48 py-9 bg-gradient-to-b from-[#E4FAF4] to-[#FFFFFF]">
+    <section class="flex justify-between lg:items-center px-5 py-[50px] lg:px-48 lg:py-9 bg-gradient-to-b from-[#E4FAF4] to-[#FFFFFF]">
         <div>
-            <h2 class="text-[#222222] text-[40px] font-black">Ask The Expert</h2>
+            <h2 class="text-[#222222] text-[30px] lg:text-[40px] font-black">Ask The Expert</h2>
             <p class="mt-5 text-[17px] font-light">You can schedule a meeting with an expense manager</p>
 
 
-            <div class="mt-[50px] flex items-start gap-10">
+            <div class="mt-[50px] flex flex-col lg:flex-row items-start gap-10">
                 <div class="flex flex-col w-[260px] h-full">
                     <div class="p-4 bg-[#E8F9F5] w-fit">
                         <img src="assets/cash.svg" class="w-[25px] h-[25px]" />
@@ -118,7 +130,7 @@
                     <p class="mt-5 text-[17px] font-light flex-1">
                         Three simple options - cautious, balanced, adventurous. Experts will take care of the rest!
                     </p>
-                    <Button class="w-40 h-[52px] bg-[#00D09C] mt-16">Invest Now!</Button>
+                    <Button class="w-40 h-[52px] bg-[#00D09C] mt-[50px] lg:mt-16">Invest Now!</Button>
                 </div>
                 <div class="flex flex-col w-[260px] h-full">
                     <div class="p-4 bg-[#E8F9F5] w-fit">
@@ -128,22 +140,87 @@
                     <p class="mt-5 text-[17px] font-light flex-1">
                         An expert will give you the best advice. Schedule a meeting to learn more about mutual funds.
                     </p>
-                    <Button class="w-40 h-[52px] bg-[#00D09C] mt-16">Schedule Now</Button>
+                    <Button class="w-40 h-[52px] bg-[#00D09C] mt-[50px] lg:mt-16">Schedule Now</Button>
                 </div>
             </div>
 
 
         </div>
-        <img src="assets/Expert.png" class="max-w-[555px]"/>
+        <img src="assets/Expert.png" class="hidden lg:block max-w-[555px]"/>
     </section>
-    <section class="flex justify-center items-center flex-col min-h-[498px]">
+    <section class="flex justify-start lg:justify-center items-center flex-col min-h-[498px] px-5 py-[50px]">
         <h2 class="font-medium text-3xl">Manage your Investment from your hand.</h2>
         <p class="font-light mt-5 text-[17px]">Now you will be at ease of investing, buying and selling easier with just a click.</p>
         <p class="mt-[50px] font-medium text-2xl">Download the App now!</p>
-        <div class="flex flex-row gap-[30px] mt-[30px]">
+        <div class="flex flex-row w-full justify-between lg:justify-center lg:gap-[30px] mt-[30px]">
             <img src="assets/app.svg" class="w-[152px]"/>
             <img src="assets/app2.svg" class="w-[152px]"/>
         </div>
     </section> 
+    <Footer class="px-48 py-9 flex flex-col lg:flex-row lg:items-center">
+        <div class="w-full lg:w-1/2">
+            <img src="assets/logo.svg" />
+        </div>
+        <div class="w-full lg:w-1/2 flex flex-col gap-[28px]">
+            <div class="hidden lg:flex justify-between">
+                <div>
+                    <h2 class="text-[17px] font-black mb-[14px]">Quick Links</h2>
+                    <ul class="hidden lg:flex flex-col gap-[15px]">
+                        <li class="text-[15px] font-light">Explore Funds</li>
+                        <li class="text-[15px] font-light">Direct Mutual Funds</li>
+                        <li class="text-[15px] font-light">Personal Loan</li>
+                        <li class="text-[15px] font-light">LoanPass</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-[17px] font-black mb-[14px]">Top Funded Houses</h2>
+                    <ul class="flex flex-col gap-[15px]">
+                        <li class="text-[15px] font-light">SBI Mutual Fund</li>
+                        <li class="text-[15px] font-light">HDFC Mutual Fund</li>
+                        <li class="text-[15px] font-light">Reliance Mutual Fund</li>
+                        <li class="text-[15px] font-light">L&T Mutual Fund</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-[17px] font-black mb-[14px]">Resources</h2>
+                    <ul class="flex flex-col gap-[15px]">
+                        <li class="text-[15px] font-light">Calculators</li>
+                        <li class="text-[15px] font-light">Beginner's Guide</li>
+                        <li class="text-[15px] font-light">Sitemap</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="w-full border-2">
+                    <p class="font-black text-[17px]">Quick Links</p>
+                </div>
+            </div>
+            <div class="flex justify-between">
+                <div>
+                    <h2 class="text-[17px] font-black mb-[14px]">Write to us at</h2>
+                    <ul class="flex flex-col gap-[15px]">
+                        <li class="text-[15px] font-light">contact@neofund.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-[17px] font-black mb-[14px]">Call Us At</h2>
+                    <ul class="flex flex-col gap-[15px]">
+                        <li class="text-[15px] font-light">+91-8130813864</li>
+                        <li class="text-[15px] font-light">+91-8130813864</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-[17px] font-black mb-[14px]">Download the App</h2>
+                    <ul class="flex flex-row gap-[15px]">
+                        <li><img src="assets/app3.svg" /></li>
+                        <li><img src="assets/app4.svg" /></li>
+
+                    </ul>
+                </div>
+            </div>
+        <div>
+
+        </div>
+    </Footer>
 </body>
 </html>
