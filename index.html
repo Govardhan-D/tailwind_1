@@ -157,70 +157,200 @@
             <img src="assets/app2.svg" class="w-[152px]"/>
         </div>
     </section> 
-    <Footer class="px-48 py-9 flex flex-col lg:flex-row lg:items-center">
-        <div class="w-full lg:w-1/2">
-            <img src="assets/logo.svg" />
-        </div>
-        <div class="w-full lg:w-1/2 flex flex-col gap-[28px]">
-            <div class="hidden lg:flex justify-between">
-                <div>
-                    <h2 class="text-[17px] font-black mb-[14px]">Quick Links</h2>
-                    <ul class="hidden lg:flex flex-col gap-[15px]">
-                        <li class="text-[15px] font-light">Explore Funds</li>
-                        <li class="text-[15px] font-light">Direct Mutual Funds</li>
-                        <li class="text-[15px] font-light">Personal Loan</li>
-                        <li class="text-[15px] font-light">LoanPass</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="text-[17px] font-black mb-[14px]">Top Funded Houses</h2>
-                    <ul class="flex flex-col gap-[15px]">
-                        <li class="text-[15px] font-light">SBI Mutual Fund</li>
-                        <li class="text-[15px] font-light">HDFC Mutual Fund</li>
-                        <li class="text-[15px] font-light">Reliance Mutual Fund</li>
-                        <li class="text-[15px] font-light">L&T Mutual Fund</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="text-[17px] font-black mb-[14px]">Resources</h2>
-                    <ul class="flex flex-col gap-[15px]">
-                        <li class="text-[15px] font-light">Calculators</li>
-                        <li class="text-[15px] font-light">Beginner's Guide</li>
-                        <li class="text-[15px] font-light">Sitemap</li>
-                    </ul>
-                </div>
-            </div>
+         <!-- accordion flowbite -->
+         <div class="mx-auto space-y-4 lg:hidden px-4">
             <div>
-                <div class="w-full border-2">
-                    <p class="font-black text-[17px]">Quick Links</p>
-                </div>
+                <img src="./assets/logo.svg" alt="" class="w-[200px] h-auto p-[30px]">
             </div>
-            <div class="flex justify-between">
-                <div>
-                    <h2 class="text-[17px] font-black mb-[14px]">Write to us at</h2>
-                    <ul class="flex flex-col gap-[15px]">
-                        <li class="text-[15px] font-light">contact@neofund.com</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="text-[17px] font-black mb-[14px]">Call Us At</h2>
-                    <ul class="flex flex-col gap-[15px]">
-                        <li class="text-[15px] font-light">+91-8130813864</li>
-                        <li class="text-[15px] font-light">+91-8130813864</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="text-[17px] font-black mb-[14px]">Download the App</h2>
-                    <ul class="flex flex-row gap-[15px]">
-                        <li><img src="assets/app3.svg" /></li>
-                        <li><img src="assets/app4.svg" /></li>
-
+        
+            <!-- Quick Links Accordion -->
+            <div class="border border-gray-300/40 rounded-lg w-full">
+                <button type="button" class="flex justify-between items-center w-full p-4 font-semibold" 
+                    data-accordion-target="#quick-links" aria-expanded="false" aria-controls="quick-links">
+                    Quick Links
+                    <span class="text-gray-500">+</span>
+                </button>
+                <div id="quick-links" class="hidden p-4 border-t border-gray-300/40">
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm hover:text-blue-500">Explore Funds</a></li>
+                        <li><a href="#" class="text-sm hover:text-blue-500">Direct Mutual Funds</a></li>
+                        <li><a href="#" class="text-sm hover:text-blue-500">Personal Loan</a></li>
+                        <li><a href="#" class="text-sm hover:text-blue-500">LoanPass</a></li>
                     </ul>
                 </div>
             </div>
-        <div>
-
+        
+            <!-- Top Funded Houses Accordion -->
+            <div class="border border-gray-300/50 rounded-lg">
+                <button type="button" class="flex justify-between items-center w-full p-4 font-semibold" 
+                    data-accordion-target="#top-funded" aria-expanded="false" aria-controls="top-funded">
+                    Top Funded Houses
+                    <span class="text-gray-500">+</span>
+                </button>
+                <div id="top-funded" class="hidden p-4 border-t border-gray-300/50">
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm hover:text-blue-500">SBI Mutual Fund</a></li>
+                        <li><a href="#" class="text-sm hover:text-blue-500">HDFC Mutual Fund</a></li>
+                        <li><a href="#" class="text-sm hover:text-blue-500">Reliance Mutual Fund</a></li>
+                        <li><a href="#" class="text-sm hover:text-blue-500">L&T Mutual Fund</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!-- Resources Accordion -->
+            <div class="border border-gray-300/50 rounded-lg">
+                <button type="button" class="flex justify-between items-center w-full p-4 font-semibold" 
+                    data-accordion-target="#resources" aria-expanded="false" aria-controls="resources">
+                    Resources
+                    <span class="text-gray-500">+</span>
+                </button>
+                <div id="resources" class="hidden p-4 border-t border-gray-300/50">
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm hover:text-blue-500">Calculators</a></li>
+                        <li><a href="#" class="text-sm hover:text-blue-500">Beginner’s Guide</a></li>
+                        <li><a href="#" class="text-sm hover:text-blue-500">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!-- Contact Info -->
+            <div class="flex justify-between text-[17px] px-[5px] pt-6 border-t border-gray-300/50">
+                <div>
+                    <h3 class="font-semibold">Call Us At</h3>
+                    <p class="text-gray-600">+91-8130813864</p>
+                    <p class="text-gray-600">+91-8860039452</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold">Write to us at</h3>
+                    <p class="text-gray-600">contact@neofund.com</p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center gap-[10px] my-[50px]">
+                <h2 class="text-lg font-semibold mb-4">Download the App</h2>
+                <div class="space-y-2 flex items-center gap-[10px] opacity-70">
+                    <img src="./assets/app3.svg" alt="">
+                    <span class="pb-[8px]"><img src="./assets/app4.svg" alt="" class=""></span>
+                </div>
+              </div>
         </div>
-    </Footer>
+             <!-- flowbite end -->
+             <!-- last section -->
+            <div class="flex flex-col items-start lg:flex-row lg:max-w-[1900px] lg:w-full lg:mx-auto lg:justify-between lg:px-[100px] lg:py-[100px]">
+                <div class="">
+                    <img src="./assets/logo.svg" alt="" class="hidden w-[200px] h-auto p-[30px] lg:block">
+                </div>
+                
+                  
+                <div class="space-y-[30px] hidden lg:block">
+                    <div class="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 text-gray-700">
+                      
+                      <!-- Quick Links Section -->
+                      <div>
+                        <h2 class="text-lg font-semibold mb-4">Quick Links</h2>
+                        <ul class="space-y-2">
+                          <li><a href="#" class="text-sm hover:text-blue-500">Explore Funds</a></li>
+                          <li><a href="#" class="text-sm hover:text-blue-500">Direct Mutual Funds</a></li>
+                          <li><a href="#" class="text-sm hover:text-blue-500">Personal Loan</a></li>
+                          <li><a href="#" class="text-sm hover:text-blue-500">LoanPass</a></li>
+                        </ul>
+                      </div>
+                  
+                      <!-- Recommended Houses Section -->
+                      <div>
+                        <h2 class="text-lg font-semibold mb-4">Recommended Houses</h2>
+                        <ul class="space-y-2">
+                          <li><a href="#" class="text-sm hover:text-blue-500">SBI Mutual Fund</a></li>
+                          <li><a href="#" class="text-sm hover:text-blue-500">HDFC Mutual Fund</a></li>
+                          <li><a href="#" class="text-sm hover:text-blue-500">Reliance Mutual Fund</a></li>
+                          <li><a href="#" class="text-sm hover:text-blue-500">L&T Mutual Fund</a></li>
+                        </ul>
+                      </div>
+                  
+                      <!-- Resources Section -->
+                      <div>
+                        <h2 class="text-lg font-semibold mb-4">Resources</h2>
+                        <ul class="space-y-2">
+                          <li><a href="#" class="text-sm hover:text-blue-500">Calculators</a></li>
+                          <li><a href="#" class="text-sm hover:text-blue-500">Beginner’s Guide</a></li>
+                          <li><a href="#" class="text-sm hover:text-blue-500">Sitemap</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  
+                    <div class="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 text-gray-700">
+                        <div>
+                            <h2 class="text-lg font-semibold mb-4">Write to us at</h2>
+                            <ul class="space-y-2">
+                              <li><a href="#" class="text-sm hover:text-blue-500">contact@neofund.com</a></li>
+                            </ul>
+                          </div>
+                      
+                          <!-- Recommended Houses Section -->
+                          <div>
+                            <h2 class="text-lg font-semibold mb-4">Call Us At</h2>
+                            <ul class="space-y-2">
+                              <li><a href="#" class="text-sm hover:text-blue-500">+91-8130813864</a></li>
+                              <li><a href="#" class="text-sm hover:text-blue-500">+91-8860039452</a></li>
+                            </ul>
+                          </div>
+                      
+                          <!-- Resources Section -->
+                          <div>
+                            <h2 class="text-lg font-semibold mb-4">Download the App</h2>
+                            <div class="space-y-2 flex items-center gap-[10px] opacity-70">
+                                <img src="./assets/app3.svg" alt="">
+                                <span class="pb-[8px]"><img src="./assets/app4.svg" alt="" class=""></span>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+            </div>
+            <hr class="opacity-10 max-w-[1900px] w-full mx-auto">
+            <div class="flex flex-col items-center px-[50px] md:px-[100px] lg:px-[150px] py-[25px] lg:flex-row lg:justify-around lg:gap-[1000px] max-w-[1900px] w-full mx-auto ">
+                <p class="opacity-50 hidden lg:block">
+                    Copyright 2019 Mutual Funds. All rights reserved.
+                </p>
+                <div class="flex gap-[15px] opacity-80 justify-center mb-[10px]">
+                    <img src="./assets/social 1.svg" alt="" class="lg:w-3 h-auto">
+                    <img src="./assets/social 2.svg" alt="" class="lg:w-5 h-auto">
+                    <img src="./assets/social 3.svg" alt="" class="lg:w-6 h-auto">
+                    <img src="./assets/social 4.svg" alt="" class="lg:w-5 h-auto">
+                </div>
+                <p class="opacity-50 lg:hidden">
+                    Copyright 2019 Mutual Funds. All rights reserved.
+                </p>
+            </div>
+            
+            
+            <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const accordionButtons = document.querySelectorAll("[data-accordion-target]");
+            
+                    accordionButtons.forEach(button => {
+                        button.addEventListener("click", function () {
+                            const targetId = this.getAttribute("data-accordion-target");
+                            const targetElement = document.querySelector(targetId);
+            
+                            if (targetElement) {
+                                const isOpen = targetElement.classList.contains("hidden");
+                                
+                                // Close all accordions first
+                                document.querySelectorAll("[data-accordion-target]").forEach(btn => {
+                                    const otherTarget = document.querySelector(btn.getAttribute("data-accordion-target"));
+                                    if (otherTarget !== targetElement) {
+                                        otherTarget.classList.add("hidden");
+                                        btn.setAttribute("aria-expanded", "false");
+                                    }
+                                });
+            
+                                // Toggle the clicked accordion
+                                targetElement.classList.toggle("hidden", !isOpen);
+                                this.setAttribute("aria-expanded", isOpen ? "true" : "false");
+                            }
+                        });
+                    });
+                });
+            </script>
 </body>
 </html>
